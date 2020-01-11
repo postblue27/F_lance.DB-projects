@@ -1,0 +1,1 @@
+ALTER TABLE Game ADD derived_att AS (CONVERT(varchar,Game.GAME_Location) + CONVERT(varchar,Game.GAME_Date))

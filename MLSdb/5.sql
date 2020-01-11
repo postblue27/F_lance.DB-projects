@@ -1,0 +1,7 @@
+GO
+CREATE TABLE EventTypes(
+	[ET_ID] int IDENTITY(1,1) PRIMARY KEY,
+	[ET_Type] nvarchar(50) NOT NULL
+)
+GO
+INSERT INTO EventTypes SELECT DISTINCT E_Type FROM EventsDataView

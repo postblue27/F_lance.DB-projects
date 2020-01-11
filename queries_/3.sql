@@ -1,0 +1,1 @@
+SELECT AVG(Amount) AS AverageAmount FROM payment WHERE customer_id = 7;

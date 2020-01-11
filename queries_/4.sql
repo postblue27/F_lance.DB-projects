@@ -1,0 +1,1 @@
+SELECT MAX(rental_duration) AS MaxRentalDuration, MIN(rental_duration) AS MinRentalDuration FROM film;

@@ -1,0 +1,1 @@
+SELECT actor.actor_id, actor.first_name, actor.last_name, COUNT(film_actor.film_id) AS FilmCount FROM film, actor, film_actor WHERE film.film_id = film_actor.film_id AND actor.actor_id = film_actor.actor_id GROUP BY actor.actor_id, actor.first_name, actor.last_name HAVING FilmCount > 35;
